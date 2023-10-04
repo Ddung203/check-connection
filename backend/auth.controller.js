@@ -1,5 +1,7 @@
 import mysql from "mysql2";
-
+const checkOK = async (req, res) => {
+  return res.status(200).json("Check OK");
+};
 const check = async (req, res) => {
   const config = {
     host: req.fields.host,
@@ -26,4 +28,4 @@ const check = async (req, res) => {
   }
 };
 
-export { check };
+export { check, checkOK };
