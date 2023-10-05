@@ -7,7 +7,7 @@ const check = async (req, res) => {
     host: req.fields.host,
     user: req.fields.user,
     password: req.fields.password,
-    port: req.fields.port,
+    // port: req.fields.port,
     database: req.fields.database,
   };
   const myDB = await mysql.createPool(config);
@@ -23,6 +23,7 @@ const check = async (req, res) => {
     return res.status(200).json({
       statusCode: 200,
       message: "Kết nối đến cơ sở dữ liệu thất bại!",
+      config,
       error,
     });
   }
