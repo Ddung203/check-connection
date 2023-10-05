@@ -1,8 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
-import checkRouter from "./check.route.js";
 import formidableMiddleware from "express-formidable";
 import cors from "cors";
+import checkRouter from "./src/api/check.route.js";
 
 const app = express();
 const port = 3030;

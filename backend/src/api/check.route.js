@@ -1,5 +1,5 @@
 import express from "express";
-import { check, checkOK } from "./auth.controller.js";
+import { check, checkOK } from "./check.controller.js";
 const router = express.Router();
 
 const checkRouter = (app) => {
